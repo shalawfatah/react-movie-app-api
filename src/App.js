@@ -24,7 +24,6 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault()
     const searchApi = async () => {
-      if(search == '') return
       try {
         const response = await fetch(SEARCH_API+search)
         const result = await response.json()
